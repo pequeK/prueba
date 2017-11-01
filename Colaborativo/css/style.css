@@ -1,22 +1,17 @@
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	background-color: #FFFFFF;
-	margin: 0;
-	padding: 0;
+	margin: 1px;
+	padding: 1px;
 	color: #000;
 }
 /* ~~ Selectores de elemento/etiqueta ~~ */
 ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
-	padding: 0;
-	margin: 0;
+	padding: 2px;
+	margin: 2px;
 }
 
 
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen del bloque contenedor. El margen inferior restante lo mantendrá separado de los elementos de que le sigan.  */
-	padding-right: 15px;
-	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de los bloques, en lugar de en los elementos del bloque propiamente dicho, elimina todas las matemáticas de modelo de cuadro. Un bloque anidado con relleno lateral también puede usarse como método alternativo. */
-}
 a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
 	border:border;
 }
@@ -34,9 +29,9 @@ a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usu
 }
 /* ~~ Este contenedor de anchura fija rodea a todas las demás bloques ~~ */
 .container {
-	width: 1200px;
+	width: 1000px;
 	background-color: #FFFFFF;
-	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño  */
+	margin: 1px auto; /* el valor automático de los lados, unido a la anchura, centra el diseño  */
 }
 /* ~~ No se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. ~~ */
 header {
@@ -55,24 +50,24 @@ header {
 */
 .sidebar1 {
 	float: right;
-	width: 180px;
+	width: 160px;
 	background-color:#F90;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 .content {
 	padding: 10px 0;
-	width: 780px;
+	width: 800px;
 	float: right;
 }
 
 /* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
 .content ul, .content ol {
-	padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
+	padding: 10px 20px 20px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
 }
 
 /* ~~ El pie de página ~~ */
 footer {
-	padding: 10px 0;
+	padding: 20px 0;
 	background-color: #000;
 	position: relative;/* esto da a IE6 el parámetro hasLayout para borrar correctamente */
 	clear: both; /* esta propiedad de borrado fuerza a .container a conocer dónde terminan las columnas y a contenerlas */
@@ -147,4 +142,58 @@ li a:hover {
 body,td,th {
 	color: #000;
 }
+
+#categorias{
+	width: 1110px;
+	height: auto; overflow: hidden;
+	border: 1px solid;
+	margin-top: 20px;
+	float: right;
+}
+
+.uno{
+	width: 180px;
+	height: auto; overflow: hidden;
+	border: 1px solid;
+	float: left;
+	padding: 5px;
+	text-align: center;
+
+}
+
+.dos{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.tres{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.cuatro{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.cinco{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.Más-información {
+	
+	border: 2px solid #006699; 
+	padding: 10px 20px 10px 20px 
+	margin: 10px;
+
+}
+
+.Más-información:hover{
+	background: #006699;
+	color: #fff;
+	transition: background 1s, color 1s;
+}
+
+
 
